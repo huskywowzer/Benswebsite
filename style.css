@@ -70,11 +70,25 @@ th {
 }
 
 /* Styles for the contact form */
+/* Reset and base styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1 {
+    color: palegreen;
+    background-color: orange;
+    font-style: italic;
+}
+
+/* Styles for the contact form */
 .contact-form {
     max-width: 500px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #f0f8ff;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -96,6 +110,28 @@ th {
     border-radius: 5px;
     font-size: 14px;
     font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Hover effect on inputs and textarea */
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border-color: #ff7e5f;
+    background-color: #fff0e6;
+}
+
+/* Hover effect on the submit button */
+.contact-form button:hover {
+    background-color: #ff7e5f;
+    color: #fff;
+}
+
+/* Focus effect for input fields */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #feb47b;
+    outline: none;
+    background-color: #fff;
 }
 
 .contact-form button {
@@ -109,6 +145,6 @@ th {
     transition: background-color 0.3s ease;
 }
 
-.contact-form button:hover {
-    background-color: #0056b3;
+.contact-form button:focus {
+    outline: none;
 }
