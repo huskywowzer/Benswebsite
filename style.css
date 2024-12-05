@@ -1,58 +1,83 @@
-/*For each selector there are “properties” inside curly 
-brackets, which simply take the form of words such as 
-color, font-weight or background-color. A value 
-is given to the property following a colon 
-(NOT an “equals” sign). Semi-colons are used to separate 
-the properties.*/
+/* ========================================
+   Global Styles (Applied to all pages)
+   ======================================== */
+   body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
 
-body, ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
+h1, h4, h5 {
+    font-family: 'Helvetica', sans-serif;
+
+}
+
+h1 {
+    color:#333;
+    "font-size: 2.5em;
+
+}
+
+h4 {
+    color:#555;
+    font-size: 1.5em;
+}
+
+
+/* ========================================
+   Navigation Bar Styles
+   ======================================== */
 nav {
     background-color: #333;
-    padding: 10px 0; 
+    padding: 10px 0;
 }
 
 nav ul {
     display: flex; /* Align items horizontally */
-    justify-content: center; /* centers the items */
+    justify-content: center; /* Centers the items */
 }
 
 nav ul li {
     margin: 0 15px;
-
 }
 
 nav ul li a {
-    text-decoration: none;
     color: white;
     font-size: 18px;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border-radius: 4px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 /* hover effect for links */
 nav ul li a:hover {
-    background-color: #575757;
+    background-color: #ff7e5f;
+    transform: scale(1.1);
 }
 
-
-h1 {
-    color: palegreen;
-    background-color: orange; /*this made all <h1></h1> have yellow text and a blue bar background*/
-    font-style: italic;
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px, 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-h4 {
-    text-transform: capitalize;
-    text-transform: uppercase;
-
+footer a {
+    color: #ff7e5f;
+    text-decoration: none;
 }
 
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ========================================
+   Table Styles (Used for rave location tables)
+   ======================================== */
 table {
     border-collapse: collapse;
     width: 80%;
@@ -69,21 +94,9 @@ th {
     text-align: center;
 }
 
-/* Styles for the contact form */
-/* Reset and base styles */
-body, ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-h1 {
-    color: palegreen;
-    background-color: orange;
-    font-style: italic;
-}
-
-/* Styles for the contact form */
+/* ========================================
+   Contact Page Styles
+   ======================================== */
 .contact-form {
     max-width: 500px;
     margin: 20px auto;
@@ -147,4 +160,76 @@ h1 {
 
 .contact-form button:focus {
     outline: none;
+}
+
+/* ========================================
+   Form Styles (for all forms, if needed)
+   ======================================== */
+/* Add styles for your other forms here */
+
+/* ========================================
+   Media Queries (for responsiveness)
+   ======================================== */
+
+   /*Homepage Hero CAll To Action
+   *********************************************/
+.hero {
+    background-image: url('https://www.usatoday.com/gcdn/-mm-/b2b05a4ab25f4fca0316459e1c7404c537a89702/c=0-0-1365-768/local/-/media/2021/12/19/USATODAY/usatsports/imageforentry18-4mg.jpg?width=660&height=371&fit=crop&format=pjpg&auto=webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff7e5f;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+}
+
+.cta-button:hover {
+    background-color: #feb47b
+}
+
+@media (max-width: 768px) {
+    /* Example for mobile view */
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 1em;
+    }
 }
