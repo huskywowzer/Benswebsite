@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>This is my first project</title>
+    <link rel="stylesheet" href="style.css"> <!--this links to the style.css sheet-->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Welcome To Ben's Website</h1>
+    <h4>A look into his mind</h4>
+
+    <p>Throughout this website, we will look at different
+        facts about myself for shits and giggles!</p>
+
+    
+    <br>
+
+    <h4>What is your favorite song currently?</h4>
+    <p><a href="https://www.youtube.com/watch?v=_RuuRU0bGLc">Thought I Was Dead</a></p>
+
+    <h4>What is your favorite image from the Rezz Rocks Trip?</h4>
+    <img src="images/IMG_0008.JPEG" height="400" width="250" alt="Ben Is Goofy">
+    
+    <br>
+
+    <h4 style="text-decoration: underline;">What were the locations of your raves?</h4>
+    <table>
+        <tr>
+            <th>Rave</th>
+            <th>Location</th>
+            <th>With Whom?</th>
+            <th>Awesomeness Scale</th>
+        </tr>
+        <tr>
+            <td>ATliens</td>
+            <td>Aggie Theater</td>
+            <td>My dad and I</td>
+            <td>9/10</td>
+        </tr>
+        <tr>
+            <td>Rezz 2022</td>
+            <td>Red Rocks</td>
+            <td>My dad and I</td>
+            <td>10/10</td>
+        </tr>
+        <tr>
+            <td>Mersiv</td>
+            <td>Red Rocks</td>
+            <td>Daniel and I</td>
+            <td>9.5/10</td>
+        </tr>
+        <tr>
+            <td>Rezz 2024</td>
+            <td>Red Rocks</td>
+            <td>Daniel and I</td>
+            <td>11/10</td>
+        </tr>
+        </table>
+    <br>
+    <br>
+<!--use the <abbr> tag sometime to experiment. It allows for an 
+    abbreviation to be explained when the mouse cursor is hovered over 
+    the part. For example: 
+    <p>The <abbr title="World Health Organization">WHO</abbr> declared a global health emergency.</p>
+    essentially whenever the text WHO is hovered over on the website, it'll show what it means -->
+    <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <br>
+        <h5>what is your favorite food?</h5>
+        <input type="radio" id="pizza" name="pizza" value="pizza">
+        <label for="pizza">Pizza!</label><br>
+        <input type="radio" id="salad" name="salad" value="salad">
+        <label for="salad">Salad!!</label><br>
+        <input type="radio" id="steak" name="steak" value="steak">
+        <label for="steak">StEaK</label>
+        
+        
+    </form>
+    <h4>What genres of music do you like most?</h4>
+    <br>
+    
+    <form>
+        <input type="checkbox" id="genre1" name="genre1" value="DnB">
+        <label for="genre1">I love DnB!</label><br>
+        <input type="checkbox" id="genre2" name="genre2" value="Dubstep">
+        <label for="genre2">I love <em>Dubstep!</em></label><br>
+        <input type="checkbox" id="genre3" name="genre3" value="House">
+        <label for="genre3">I love House!</label><br>
+        <input type="checkbox" id="genre4" name="genre4" value="Pop">
+        <label for="genre4">I love pop!</label><br>
+        <input type="checkbox" id="genre5" name="genre5" value="Classical">
+        <label for="genre5">I love classical!</label><br>
+        
+
+    </form>
+
+    <br>
+    <br>
+    <h4>Which from the dropdown menu do you like <em>most?</em></h4>
+    <form>
+        <select>
+            <option>Potatoes</option>
+            <option>Celery</option>
+            <option>Rocky Mountain Oysters</option>
+            <option>Custard</option>
+        </select>
+    </form>
+<!-- for these forms, come back to them to give them php ability with 
+ the submit buttons added. You can find this on the w3 schools website
+ labeled "HTML Form Attributes"-->
+
+    <br>
+    <br>
+    <br>
+    <h1 style="color:red">This is the part where things get weird and I start <q>using quotes
+        a lot</q></h1>
+
+<!--using attributes like "stye" allows to change the way things look using CSS. Try 
+not to use the inline way like above, and instead use External CSS with a separate
+CSS file which is also attached and called style.css-->
+
+<textarea rows="5" cols="20">What are your opinions on badassery?</textarea>
+
+</body>
+
+</html>

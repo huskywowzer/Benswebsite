@@ -1,0 +1,71 @@
+/*For each selector there are “properties” inside curly 
+brackets, which simply take the form of words such as 
+color, font-weight or background-color. A value 
+is given to the property following a colon 
+(NOT an “equals” sign). Semi-colons are used to separate 
+the properties.*/
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0; 
+}
+
+nav ul {
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* centers the items */
+}
+
+nav ul li {
+    margin: 0 15px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+/* hover effect for links */
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+
+h1 {
+    color: palegreen;
+    background-color: orange; /*this made all <h1></h1> have yellow text and a blue bar background*/
+    font-style: italic;
+}
+
+h4 {
+    text-transform: capitalize;
+    text-transform: uppercase;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: red;
+    text-align: center;
+}
+
