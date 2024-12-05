@@ -7,11 +7,19 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <h1>Use the following form to contact me!</h1>
 
     <p>Hello! If you are wanting to get in contact with me, hit me up on the form below!</p>
 <!--THIS IS THE SETUP FOR THE CONTACT FORM. ASK DANIEL ABOUT BACKEND METHODS FOR EMAIL DELIVERY-->
-    <form action="mailto:benjamindeslauriers1998@gmail.com" method="post" enctype="text/plain">
+    <form class="contact-form" action="mailto:benjamindeslauriers1998@gmail.com" method="post" enctype="text/plain">
         <label for="fname">First Name:</label><br>
         <input type="text" id="fname" name="fname" required><br>
 
@@ -29,3 +37,6 @@
     
 </body>
 </html>
+
+<!--to add custom styling to forms using css, you can turn each form entry into a class of its
+own using class attributes and edit that specific class in the overarching style.css sheet -->
